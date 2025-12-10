@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Room 5</title>
+  </head>
+  <body>
+    <!-- children of the body element -->
+
+    <div class="fade-container">
+      <div id="timer">1:30</div>
+      <div class="box">
+        <div class="black column2">
+          <div class="row1 center-content">
+            <div class="box2 contain">
+              <img
+                src="images/row-1-column-1 (8) (1).jpg"
+                class="contain-image"
+              />
+              <img
+                src="gifs/ror.gif"
+                class="overlay-image clickable1"
+                onclick="openModal()"
+                id="face"
+              />
+            </div>
+          </div>
+          <div class="row2 green">
+            <img class="contain-image" src="images/row-2-column-1 (1).jpg" />
+            <div class="column3 contain overlay-image2">
+              <img
+                class="contain-image clickable1"
+                src="images/witch.png"
+                onclick="pupPuz3()"
+              />
+              <img
+                class="contain-image clickable1"
+                src="images/pirate.png"
+                onclick="pupPuz2()"
+              />
+              <img
+                class="contain-image clickable1"
+                src="images/queen.png"
+                onclick="pupPuz4()"
+              />
+              <img
+                class="contain-image clickable1"
+                src="images/jest.png"
+                onclick="pupPuz1()"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="black column">
+          <img src="images/row-1-column-2 (6).jpg" class="contain-image" />
+          <img
+            src="images/door2.png"
+            id="close"
+            class="overlay-image3"
+            onclick="jigDor()"
+          />
+        </div>
+      </div>
+
+      <div class="modal center-content" id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-body center-content">
+          <div class="row">
+            <div class="box black center-content">
+              <img src="images/wht.png" class="img2 contain-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal2 center-content" id="myModal2">
+        <div class="modal-body2 center-content">
+          <div class="row">
+            <div class="box black center-content">
+              <img
+                src="images/door2.png"
+                onclick="dor()"
+                id="oh"
+                class="img2 contain-image clickable"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumpscare center-content" id="jumpscare">
+        <img src="images/owow.png" />
+      </div>
+    </div>
+
+    <audio src="audio/flapjack.wav" id="ow" type="audio/wav"></audio>
+    <audio src="audio/knob.wav" id="kob" type="audio/wav"></audio>
+    <audio src="audio/laugh1.wav" id="one" type="audio/wav"></audio>
+    <audio src="audio/laugh2.wav" id="two" type="audio/wav"></audio>
+    <audio src="audio/laugh3.wav" id="thr" type="audio/wav"></audio>
+    <audio src="audio/laugh4.wav" id="for" type="audio/wav"></audio>
+    <audio src="audio/paper.wav" id="pap" type="audio/wav"></audio>
+    <audio src="audio/tick.wav" id="ambient" loop type="audio/wav"></audio>
+    <audio src="audio/open.wav" id="open" type="audio/wav"></audio>
+    <audio src="audio/scream.wav" id="ahh" type="audio/wav"></audio>
+
+    <!-- link the JS file -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- BattleBots Offical Site: https://battlebots.com/ -->
+<!-- BattleBots Images: https://www.newsweek.com/battlebots-discovery-channel-1552086 -->

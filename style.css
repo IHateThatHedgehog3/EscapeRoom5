@@ -1,0 +1,273 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+/* build your layout */
+.box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.box2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.background {
+  background-image: url("images/row-1-column-1 (4).jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.background2 {
+  background-image: url("images/row-1-column-2 (3).jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.background3 {
+  background-image: url("images/row-1-column-1 (4).jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.row1 {
+  height: 50%;
+  width: 100%;
+}
+.row2 {
+  height: 50%;
+  width: 100%;
+}
+.column {
+  display: block;
+  height: 100%;
+  width: 60%;
+}
+.column2 {
+  display: block;
+  height: 100%;
+  width: 40%;
+}
+.column3 {
+  display: flex;
+  height: 100%;
+  width: 40%;
+}
+
+/* control your content */
+.contain-image {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.img2 {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#timer {
+  position: fixed;
+  top: 50px;
+  left: 40px;
+  background: rgba(143, 16, 16, 0.6);
+  color: rgb(209, 42, 42);
+  padding: 10px 15px;
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+/* colors to see divs */
+.black {
+  background-color: #000000;
+}
+.pink {
+  background-color: #eb5674;
+}
+.blue {
+  background-color: #01acf1;
+}
+.red {
+  background-color: #ed1b24;
+}
+.green {
+  background-color: #32d666;
+}
+.yellow {
+  background-color: #fbee40;
+}
+.orange {
+  background-color: #fd5632;
+}
+.grey {
+  background-color: #d3d3d3;
+}
+.dark-grey {
+  background-color: #3a3b3c;
+}
+
+.image-overlay {
+  position: relative; /* keeps overlay contained */
+  display: inline-block;
+  width: fit-content; /* ensures it wraps tightly around image */
+}
+
+.base-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 25px; /* adjust position inside box */
+  left: 225px;
+  width: 300px; /* or whatever size you need */
+  height: auto;
+  opacity: 1; /* fully opaque */
+  z-index: 2; /* make sure it’s above the base image */
+}
+
+.overlay-image2 {
+  position: absolute;
+  top: 420px; /* adjust position inside box */
+  left: 15px;
+  width: 200px; /* or whatever size you need */
+  height: auto;
+  opacity: 1; /* fully opaque */
+  z-index: 2; /* make sure it’s above the base image */
+}
+
+.overlay-image3 {
+  position: absolute;
+  top: 6%; /* adjust position inside box */
+  left: 60%;
+  width: 50%; /* or whatever size you need */
+  height: auto;
+  opacity: 1; /* fully opaque */
+  z-index: 2; /* make sure it’s above the base image */
+}
+
+/* The modal background (hidden by default) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  opacity: 0.95;
+}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #554f4f;
+  opacity: 100;
+}
+
+.jumpscare {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+/* Don't cover the entire screen */
+.modal-body {
+  width: 50%;
+  height: 60%;
+  display: block;
+  background-color: black;
+  opacity: 100;
+  margin: 0;
+}
+
+.modal-body2 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  opacity: 100;
+  margin: 0;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clickable1 {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+}
+.clickable1:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+}
+.clickable1:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+
+.fade-container {
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 6s ease-out forwards;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+}
